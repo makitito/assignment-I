@@ -1,19 +1,17 @@
-#include <iostream >
+ #include <iostream>
 
  using namespace std;
 
- int main()
-	 {
-	 while (1)
+
+ int main ()
+ {
+     // print out even numbers in
+	 for(int i = 0; i <= 10; ++i)
 		 {
-			 int N;
-			 cin >> N;
-			 if(N % 5 > 0)
-				 {
-				 cout << "-1\n";
-				 continue ;
-				 }
-			 cout << N/5 << "\n";
+
+		 if(i % 2 != 0)
+		 continue ; // skips all odd numbers
+		 cout << i << "\n";
 		 }
  return 0;
  }

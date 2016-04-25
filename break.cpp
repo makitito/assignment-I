@@ -1,23 +1,18 @@
-#include <iostream>
+ #include <iostream>
 
  using namespace std;
 
- int main()
-	 {
-	 while (1)
+
+ int main ()
+ {
+     int n;
+     int i = 1;
+	 while ( true )
 		 {
-			 int N;
-			 cin >> N;
-			 if(N % 5 > 0)
-				 {
-				 cout << "-1\n";
-				 continue ;
-				 }
-				  if(N == -1)
-				  {
-					 break ;
-				  }
-			 cout << N/5 << "\n";
-		 }
+		 if(i > 10)
+		 break ;
+		 cout << i << "\n";
+		 ++i;
+	 }
  return 0;
  }
